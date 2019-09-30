@@ -1,0 +1,38 @@
+site_name: 'スターターキット'
+
+theme:
+  name: 'material'
+  language: 'ja'
+  palette:
+    primary: 'deep orange'
+    accent: 'deep orange'
+  font:
+    text: 'Roboto'
+    code: 'Roboto Mono'
+  highlightjs: true
+  hljs_languages:
+    - yaml
+    - dockerfile
+
+extra:
+  search:
+    language: 'ja'
+
+markdown_extensions:
+  - 'admonition'
+  - 'footnotes'
+  - codehilite:
+      guess_lang: false
+  - toc:
+      permalink: true
+  - pymdownx.tasklist:
+      custom_checkbox: true
+
+extra_css:
+  - 'assets/custom.css'
+
+extra_javascript:
+  - 'assets/custom.js'
+
+nav:
+  - 'Home': 'index.md'
