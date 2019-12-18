@@ -36,3 +36,23 @@ extra_javascript:
 
 nav:
   - 'Home': 'index.md'
+
+  - 'はじめに':
+      - 'クラウド': '0_introduction/cloud.md'
+      - 'コンテナ': '0_introduction/container.md'
+      - 'CI/CD': '0_introduction/ci_cd.md'
+      - 'Infrastructure as Code': '0_introduction/iac.md'
+      - '監視': '0_introduction/monitoring.md'
+
+  - 'ハンズオン':
+      - '1. 目標の確認': ''
+      - '2. プロビジョニング': ''
+      - '3. デプロイ': ''
+      - '4. 監視': ''
+
+  - 'まとめ':
+      - '': ''
+
+
+  # - '実践':
+  # - 'まとめ':
