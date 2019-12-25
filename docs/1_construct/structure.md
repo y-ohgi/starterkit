@@ -16,3 +16,7 @@
 ## 本番で想定される使い方
 "starterkit-inf"はOgranization配下にForkしてもらい、"starterkit-app"は"_infra"ディレクトリだけコピペすると良いでしょう。  
 近年のサービスは"api"や"front"など複数のサービス（リポジトリ）からなることがあるでしょう。スターターキットでは複数のサービスが構築されることを想定しています。そのため、共通リソースだけを"starterkit-inf"に切り出し、サービス側は"starterkit-inf"が生成したリソースを参照する形になっています。
+
+## プロビジョニング/デプロイ
+"starterkit-inf"は更新頻度が少ないですが、"starterkit-app"側は変更頻度が高いでしょう。  
+今回は"starterkit-app"ではCircleCIを使用して、タグが付いたタイミングでデプロするよう構築しています
