@@ -11,7 +11,7 @@
 
 この2リポジトリをcloneし、README通りに構築すると以下の通り構築されます。
 
-![struct_architecture.png](imgs/struct_architecture.png)
+![struct_architecture.png](./imgs/struct_architecture.png)
 
 ## 本番で想定される使い方
 "starterkit-inf"はOgranization配下にForkしてもらい、"starterkit-app"は"_infra"ディレクトリだけコピペすると良いでしょう。  
@@ -19,4 +19,4 @@
 
 ## プロビジョニング/デプロイ
 "starterkit-inf"は更新頻度が少ないですが、"starterkit-app"側は変更頻度が高いでしょう。  
-今回は"starterkit-app"ではCircleCIを使用して、タグが付いたタイミングでデプロするよう構築しています
+struct_architecture.png今回は"starterkit-app"ではCircleCIを使用して、タグが付いたタイミングでデプロするよう構築しています

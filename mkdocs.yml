@@ -44,8 +44,7 @@ nav:
       - 'Infrastructure as Code': '0_introduction/iac.md'
       - '監視': '0_introduction/monitoring.md'
 
-  - '構築':
-      - '目標の確認': '1_construct/structure.md'
+  - '構築': '1_construct/structure.md'
       # - 'プロビジョニング': '1_construct/provisinong.md'
       # - 'デプロイ': '1_construct/deploy.md'
       # - '4. 監視': ''
