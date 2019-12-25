@@ -46,8 +46,8 @@ nav:
 
   - '構築':
       - '目標の確認': '1_construct/structure.md'
-      - 'プロビジョニング': '1_construct/provisinong.md'
-      - 'デプロイ': '1_construct/deploy.md'
+      # - 'プロビジョニング': '1_construct/provisinong.md'
+      # - 'デプロイ': '1_construct/deploy.md'
       # - '4. 監視': ''
 
   - 'まとめ': 'finally.md'
