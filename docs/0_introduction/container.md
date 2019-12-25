@@ -1,26 +1,25 @@
 # コンテナ
-## コンテナとは
+### Dockerとは
+![docker](../imgs/docker.jpg)
+Dockerはコンテナ化の技術の技術です。  
+極端にいうと「誰の/どの環境でも動く（ポータビリティの高さ）」ことがメリットです。  
+各環境のバージョンやミドルウェアに振り回されることなく動かすことができます。
+
+Dockerの詳細は拙作のハンズオン資料を参照してください。
+
+> [入門 Docker](https://y-ohgi.github.io/introduction-docker/)
 
 ## コンテナ化
 ### コンテナの活用
-本アーキテクチャではDockerを活用します。  
+本アーキテクチャではDockerを使用します。  
 ローカル環境ではdocker-composeを使用し、プロダクション環境ではECS/Fargateを利用します。  
 
 Kubernetes、サーバーレス（LambdaのようなSaaS/FaaS）、PaaS（HerokuやGAE）などではなくECS/Fargateを選択します。  
 理由は複数ありますが、大きく「学習コストが低い」「運用コストが低い」ことの2つです。  
 コンテナは従来の資産を使用することが可能で、コンテナ化は難しくはないです。ですが、サーバーレスなアーキテクチャはベンダーのレールに乗る必要があり、新しくそのコストを払う必要があります。  
 また、ECS/Fargateは他の技術より学習コストが低く、ローカルで動かしたDockerをプロダクションでもすんなり動かすことができ、ECS/Fargate自体が比較的枯れてきている技術でドキュメントも多く、公開されているロードマップ的にもこれからのメインストリームを走るであろうことが伺えます。  
+
 > [aws/containers-roadmap](https://github.com/aws/containers-roadmap/projects/1)
-
-### Dockerとは
-![docker](../imgs/docker.jpg)
-コンテナと呼ばれる仮想化のための技術の技術です。  
-極端にいうと「誰の/どの環境でも動く」ことがメリットです。  
-各環境のバージョンやミドルウェアに振り回されることなく動かすことができます。
-
-詳細は以下のハンズオン資料を参照してください。
-
-> [入門 Docker](https://y-ohgi.github.io/introduction-docker/)
 
 ## docker-composeとは
 ![docker-compose](../imgs/docker-compose.png)

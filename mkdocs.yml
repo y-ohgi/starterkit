@@ -40,18 +40,17 @@ nav:
   - 'はじめに':
       - 'クラウド': '0_introduction/cloud.md'
       - 'コンテナ': '0_introduction/container.md'
-      - 'CI/CD': '0_introduction/ci_cd.md'
+      # - 'CI/CD': '0_introduction/ci_cd.md'
       - 'Infrastructure as Code': '0_introduction/iac.md'
       - '監視': '0_introduction/monitoring.md'
 
-  - 'ハンズオン':
-      - '1. 目標の確認': ''
-      - '2. プロビジョニング': ''
-      - '3. デプロイ': ''
-      - '4. 監視': ''
+  - '構築':
+      - '目標の確認': '1_construct/structure.md'
+      - 'プロビジョニング': '1_construct/provisinong.md'
+      - 'デプロイ': '1_construct/deploy.md'
+      # - '4. 監視': ''
 
-  - 'まとめ':
-      - '': ''
+  - 'まとめ': 'finally.md'
 
 
   # - '実践':
