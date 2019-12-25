@@ -20,3 +20,5 @@
 ## プロビジョニング/デプロイ
 "starterkit-inf"は更新頻度が少ないですが、"starterkit-app"側は変更頻度が高いでしょう。  
 struct_architecture.png今回は"starterkit-app"ではCircleCIを使用して、タグが付いたタイミングでデプロするよう構築しています
+
+![struct_git.png](./imgs/struct_git.png)
