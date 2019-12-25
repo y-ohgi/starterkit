@@ -1,0 +1,493 @@
+
+
+
+
+<!doctype html>
+<html lang="ja" class="no-js">
+  <head>
+    
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width,initial-scale=1">
+      <meta http-equiv="x-ua-compatible" content="ie=edge">
+      
+      
+      
+      
+        <meta name="lang:clipboard.copy" content="クリップボードへコピー">
+      
+        <meta name="lang:clipboard.copied" content="コピーしました">
+      
+        <meta name="lang:search.language" content="ja">
+      
+        <meta name="lang:search.pipeline.stopwords" content="True">
+      
+        <meta name="lang:search.pipeline.trimmer" content="True">
+      
+        <meta name="lang:search.result.none" content="何も見つかりませんでした">
+      
+        <meta name="lang:search.result.one" content="1件見つかりました">
+      
+        <meta name="lang:search.result.other" content="#件見つかりました">
+      
+        <meta name="lang:search.tokenizer" content="[\s\-　、。，．]+">
+      
+      <link rel="shortcut icon" href="../../assets/images/favicon.png">
+      <meta name="generator" content="mkdocs-1.0.4, mkdocs-material-4.6.0">
+    
+    
+      
+        <title>CI/CD - スターターキット</title>
+      
+    
+    
+      <link rel="stylesheet" href="../../assets/stylesheets/application.1b62728e.css">
+      
+        <link rel="stylesheet" href="../../assets/stylesheets/application-palette.a8b3c06d.css">
+      
+      
+        
+        
+        <meta name="theme-color" content="#ff7043">
+      
+    
+    
+      <script src="../../assets/javascripts/modernizr.268332fc.js"></script>
+    
+    
+      
+        <link href="https://fonts.gstatic.com" rel="preconnect" crossorigin>
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,400,400i,700%7CRoboto+Mono&display=fallback">
+        <style>body,input{font-family:"Roboto","Helvetica Neue",Helvetica,Arial,sans-serif}code,kbd,pre{font-family:"Roboto Mono","Courier New",Courier,monospace}</style>
+      
+    
+    <link rel="stylesheet" href="../../assets/fonts/material-icons.css">
+    
+    
+      <link rel="stylesheet" href="../../assets/custom.css">
+    
+    
+      
+    
+    
+  </head>
+  
+    
+    
+    <body dir="ltr" data-md-color-primary="deep-orange" data-md-color-accent="deep-orange">
+  
+    <svg class="md-svg">
+      <defs>
+        
+        
+      </defs>
+    </svg>
+    <input class="md-toggle" data-md-toggle="drawer" type="checkbox" id="__drawer" autocomplete="off">
+    <input class="md-toggle" data-md-toggle="search" type="checkbox" id="__search" autocomplete="off">
+    <label class="md-overlay" data-md-component="overlay" for="__drawer"></label>
+    
+      <a href="#cicd" tabindex="1" class="md-skip">
+        Skip to content
+      </a>
+    
+    
+      <header class="md-header" data-md-component="header">
+  <nav class="md-header-nav md-grid">
+    <div class="md-flex">
+      <div class="md-flex__cell md-flex__cell--shrink">
+        <a href="../.." title="スターターキット" class="md-header-nav__button md-logo">
+          
+            <i class="md-icon"></i>
+          
+        </a>
+      </div>
+      <div class="md-flex__cell md-flex__cell--shrink">
+        <label class="md-icon md-icon--menu md-header-nav__button" for="__drawer"></label>
+      </div>
+      <div class="md-flex__cell md-flex__cell--stretch">
+        <div class="md-flex__ellipsis md-header-nav__title" data-md-component="title">
+          
+            <span class="md-header-nav__topic">
+              スターターキット
+            </span>
+            <span class="md-header-nav__topic">
+              
+                CI/CD
+              
+            </span>
+          
+        </div>
+      </div>
+      <div class="md-flex__cell md-flex__cell--shrink">
+        
+          <label class="md-icon md-icon--search md-header-nav__button" for="__search"></label>
+          
+<div class="md-search" data-md-component="search" role="dialog">
+  <label class="md-search__overlay" for="__search"></label>
+  <div class="md-search__inner" role="search">
+    <form class="md-search__form" name="search">
+      <input type="text" class="md-search__input" name="query" placeholder="検索" autocapitalize="off" autocorrect="off" autocomplete="off" spellcheck="false" data-md-component="query" data-md-state="active">
+      <label class="md-icon md-search__icon" for="__search"></label>
+      <button type="reset" class="md-icon md-search__icon" data-md-component="reset" tabindex="-1">
+        &#xE5CD;
+      </button>
+    </form>
+    <div class="md-search__output">
+      <div class="md-search__scrollwrap" data-md-scrollfix>
+        <div class="md-search-result" data-md-component="result">
+          <div class="md-search-result__meta">
+            検索キーワードを入力してください
+          </div>
+          <ol class="md-search-result__list"></ol>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+        
+      </div>
+      
+    </div>
+  </nav>
+</header>
+    
+    <div class="md-container">
+      
+        
+      
+      
+      <main class="md-main" role="main">
+        <div class="md-main__inner md-grid" data-md-component="container">
+          
+            
+              <div class="md-sidebar md-sidebar--primary" data-md-component="navigation">
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    <nav class="md-nav md-nav--primary" data-md-level="0">
+  <label class="md-nav__title md-nav__title--site" for="__drawer">
+    <a href="../.." title="スターターキット" class="md-nav__button md-logo">
+      
+        <i class="md-icon"></i>
+      
+    </a>
+    スターターキット
+  </label>
+  
+  <ul class="md-nav__list" data-md-scrollfix>
+    
+      
+      
+      
+
+
+  <li class="md-nav__item">
+    <a href="../.." title="Home" class="md-nav__link">
+      Home
+    </a>
+  </li>
+
+    
+      
+      
+      
+
+
+  <li class="md-nav__item md-nav__item--nested">
+    
+      <input class="md-toggle md-nav__toggle" data-md-toggle="nav-2" type="checkbox" id="nav-2">
+    
+    <label class="md-nav__link" for="nav-2">
+      はじめに
+    </label>
+    <nav class="md-nav" data-md-component="collapsible" data-md-level="1">
+      <label class="md-nav__title" for="nav-2">
+        はじめに
+      </label>
+      <ul class="md-nav__list" data-md-scrollfix>
+        
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../cloud/" title="クラウド" class="md-nav__link">
+      クラウド
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../container/" title="コンテナ" class="md-nav__link">
+      コンテナ
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../iac/" title="Infrastructure as Code" class="md-nav__link">
+      Infrastructure as Code
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../monitoring/" title="監視" class="md-nav__link">
+      監視
+    </a>
+  </li>
+
+        
+      </ul>
+    </nav>
+  </li>
+
+    
+      
+      
+      
+
+
+  <li class="md-nav__item">
+    <a href="../../1_construct/structure/" title="構築" class="md-nav__link">
+      構築
+    </a>
+  </li>
+
+    
+      
+      
+      
+
+
+  <li class="md-nav__item">
+    <a href="../../finally/" title="まとめ" class="md-nav__link">
+      まとめ
+    </a>
+  </li>
+
+    
+  </ul>
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+            
+              <div class="md-sidebar md-sidebar--secondary" data-md-component="toc">
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+<nav class="md-nav md-nav--secondary">
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">目次</label>
+    <ul class="md-nav__list" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#cicd_1" class="md-nav__link">
+    CI/CDとは
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#ci" class="md-nav__link">
+    CI
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#cd" class="md-nav__link">
+    CD
+  </a>
+  
+</li>
+      
+      
+      
+      
+      
+    </ul>
+  
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+          
+          <div class="md-content">
+            <article class="md-content__inner md-typeset">
+              
+                
+                
+                <h1 id="cicd">CI/CD<a class="headerlink" href="#cicd" title="Permanent link">&para;</a></h1>
+<p><img alt="ci-cd-flow" src="../imgs/ci-cd-flow.png" /></p>
+<h2 id="cicd_1">CI/CDとは<a class="headerlink" href="#cicd_1" title="Permanent link">&para;</a></h2>
+<p>クラウドネイティブなアプリケーションには欠かせない重要な要素です。<br />
+CNCF のTrail Map ではオーケストレーション（ECS, K8s）より先に取り上げられているほど重要です。コンテナ化の次はECSやK8sではなくCI/CDを導入しましょう。</p>
+<h2 id="ci">CI<a class="headerlink" href="#ci" title="Permanent link">&para;</a></h2>
+<p>継続的インテグレーション（Continuous Integration）です。<br />
+リポジトリにpushされたコードを自動的にビルド&amp;テストを実行し、開発物の品質担保を行います。<br />
+開発時から意識しておく必要があり、自動テスト可能な設計/開発を行う必要と、事前のチーム内での合意（いつCIを実行するかなど）が必要があります。</p>
+<p>弊社ではCircleCI Enterprise が導入されています。<br />
+GitHub Enterprise とスムーズに連携可能です。例えば他のCIツールであればIP開放申請や自前ホストが必要になります。  </p>
+<p>最初は以下の2つを意識すると良いでしょう</p>
+<ol>
+<li>プロダクトにテストを導入する<ul>
+<li>e.g. PHPUnit, rspec, jest</li>
+</ul>
+</li>
+<li>PR時にテストを通す<ul>
+<li>CircleCI Enterprise を使用する</li>
+<li>コードレビューはCIが通ってから実施するよう合意する</li>
+</ul>
+</li>
+</ol>
+<p>この先はテストの並列化、静的解析、カバレッジ計測、結合テスト、負荷試験など、サービスの品質を担保するための仕組みを整えましょう。<br />
+基本的にCIはクラウド的な難しさよりアプリケーション的な難しさの方が大きいでしょう。</p>
+<h2 id="cd">CD<a class="headerlink" href="#cd" title="Permanent link">&para;</a></h2>
+<p>継続的デリバリ（Continous Delivery）もしくは継続的デプロイメント（Continous Deployment）です。<br />
+それぞれの違いはApproveを行うかどうからしいですが、リアルワールドで厳密に区別されてるようには見えません（デリバリがApproveを実行する、デプロイがApproveなしでデプロイすることです）。この2つの違いはチーム内で認識があっていれば特に意識する必要はないでしょう。  </p>
+<p>現状過渡期に見えていて、主要なツールとしては各クラウドベンダーのSaaS・Argo CD・Fluxなど様々なプロダクトが選択されているようにみえます。<br />
+筆者としてはArgoを推したいです。単純なCD（Argo CD）だけでなく、高機能なデプロイ戦略（Argo Rollout）・ワークフローの実行（Argo Workflow）など、サービス構築時に欲しくなる機能が揃っています。<br />
+単純なCDだけであれば高機能すぎますが、将来的に投資可能であったりワークフローなどの機能が必要な場合は選択すると良いでしょう。  </p>
+<p>スモールスタートの場合は各クラウドベンダーのSaaSを使用するといいでしょう。<br />
+AWSであればCode兄弟（CodePipeline, CodeBuild, CodeDeploy）、GCPであればCloud Build です。各種SaaSはドキュメントが整理されており、一般的に使用されることが多くドキュメントや事例が豊富で、ベンダーからのサポートも受けられます。<br />
+まずはCode兄弟を選択すると良いでしょう。</p>
+<p>導入時にはどのプロダクトであっても以下に気をつける必要があると考えます。</p>
+<ol>
+<li>CDするタイミング<ul>
+<li>CDはCIが通っていることが前提。それを前提にデプロイする仕組みにする。</li>
+<li>例えばdevelopブランチにpushがあったらステージングへ、masterブランチへpushがあったらプロダクションへ、それぞれデプロイされるようにする</li>
+</ul>
+</li>
+<li>環境を意識する<ul>
+<li>一般的にプロダクション環境だけでなく、ステージングや開発環境が存在し、それらの差分をなるべく少なくする。</li>
+<li>開発環境はカジュアルにローカルからデプロイできていいが、ステージングとプロダクションはGitに上がってるコードが正になるようにするなど。</li>
+<li>ステージング・プロダクションの2パターンだけ考慮していると、あとからQAや負荷試験の環境が来たときに詰む。<ul>
+<li>最初から「何環境あるか」を考えるのではなく、最初から「環境を増やせる」ようにする。</li>
+</ul>
+</li>
+</ul>
+</li>
+<li>監視をする<ul>
+<li>デプロイは障害を起こす可能性があり、変更に気付ける仕組みが必要。<ul>
+<li>これがないとデプロイに複雑なフローが必要になってしんどい。デプロイに上長承認が必要になるなど。</li>
+</ul>
+</li>
+</ul>
+</li>
+<li>migrationの実行<ul>
+<li>DBのmigrationをCDパイプラインの中に組み込む<ul>
+<li>migrationが必要ないデプロイでもデプロイサイクルの中で実行する</li>
+</ul>
+</li>
+<li>migrationは「1デプロイ1回」を意識する<ul>
+<li>1デプロイサイクルで1度だけ実行する。間違っても「コンテナ起動時にmigrationを置こうなう」ようにしてはならない</li>
+</ul>
+</li>
+<li>ローカルからDB migrationをするとデプロイ手法が複雑になる。<ul>
+<li>DB mgirationは下位互換性を完全に担保する。特定のカラムが不要になっても削除しないなど。</li>
+<li>ロールバック手順は明記する。即座にロールバックできるようREADMEやWikiに書いておく。</li>
+</ul>
+</li>
+</ul>
+</li>
+<li>デプロイ手法の統一<ul>
+<li>サービスが1つだけなら問題ないですが、複数に増えてくるとデプロイ手法が別れてつらくなることがある。<ul>
+<li>「masterブランチにマージしたら」「tagをつけたら」「Jenkinsのジョブを実行したら」などなど...</li>
+<li>デプロイ手法が混在すると安易にデプロイできなくなり、開発サイクルが遅くなる</li>
+</ul>
+</li>
+<li>デプロイ手法はチーム内で合意できていることが重要。<ul>
+<li>迷ったらdevelopブランチにpushがあったらステージングへ、masterブランチへpushがあったらプロダクションへ、それぞれデプロイされるようにする</li>
+</ul>
+</li>
+</ul>
+</li>
+</ol>
+<p>CDは導入が難しく、1回導入してしまえば完了するため知見が貯めづらいです。<br />
+ですが、やることは決まっているかつ導入してしまえば完了するので導入してしまえばこっちのものです。<br />
+また、サービスの成長によってマイクロサービス化が進むとデプロイにサービス間の疎通やその接続方法などなどの問題が絡んできます。<br />
+個人的にCDは、サービスが増えてくると、技術的な難しさより組織論的な難しさが勝ってくると思っています。マイクロサービス化はチームだけでなく社での合意が必要になると考えます。それに失敗すると「IP制限」や「 <code>/etc/hosts</code> 」や「Authプロトコル」や、チーム間の繋がりが難しくなってきます。</p>
+                
+                  
+                
+                
+              
+              
+                
+
+
+              
+            </article>
+          </div>
+        </div>
+      </main>
+      
+        
+<footer class="md-footer">
+  
+  <div class="md-footer-meta md-typeset">
+    <div class="md-footer-meta__inner md-grid">
+      <div class="md-footer-copyright">
+        
+        powered by
+        <a href="https://www.mkdocs.org">MkDocs</a>
+        and
+        <a href="https://squidfunk.github.io/mkdocs-material/">
+          Material for MkDocs</a>
+      </div>
+      
+    </div>
+  </div>
+</footer>
+      
+    </div>
+    
+      <script src="../../assets/javascripts/application.808e90bb.js"></script>
+      
+        
+        
+          
+          <script src="../../assets/javascripts/lunr/lunr.stemmer.support.js"></script>
+          
+            
+              
+                <script src="../../assets/javascripts/lunr/tinyseg.js"></script>
+              
+              
+                <script src="../../assets/javascripts/lunr/lunr.ja.js"></script>
+              
+            
+          
+          
+        
+      
+      <script>app.initialize({version:"1.0.4",url:{base:"../.."}})</script>
+      
+        <script src="../../assets/custom.js"></script>
+      
+    
+  </body>
+</html>

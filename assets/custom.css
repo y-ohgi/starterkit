@@ -1,0 +1,64 @@
+.md-typeset h1 {
+  margin: 1em 0 0;
+}
+
+img {
+  border: 3px solid #f47a4e;
+}
+
+/* footer */
+.md-footer-nav__link {
+  padding-top: 1rem;
+  padding-bottom: 0rem;
+}
+
+/* heading */
+h1:before, h2:before, h3:before, h4:before, h5:before {
+  content: "";
+  color: #ccc;
+  margin-right: .25em;
+}
+
+h1 {
+  border-bottom: 4px double #ccc;
+  width: 90%;
+  margin: 40px 0 20px;
+}
+
+h1:before {
+  display: inline !important;
+  content: "#" !important;
+}
+
+h2 {
+  font-size: 145%
+}
+
+h2:before {
+  display: inline !important;
+  content: "##" !important;
+}
+
+h3 {
+  font-size: 130%
+}
+
+h3:before {
+  display: inline !important;
+  content: "###" !important;
+}
+
+h4:before {
+  display: inline !important;
+  content: "####" !important;
+}
+
+h5:before {
+  display: inline !important;
+  content: "######" !important;
+}
+
+h6:before {
+  display: inline !important;
+  content: "#######" !important;
+}

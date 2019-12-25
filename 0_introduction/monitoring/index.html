@@ -1,0 +1,1428 @@
+
+
+
+
+<!doctype html>
+<html lang="ja" class="no-js">
+  <head>
+    
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width,initial-scale=1">
+      <meta http-equiv="x-ua-compatible" content="ie=edge">
+      
+      
+      
+      
+        <meta name="lang:clipboard.copy" content="クリップボードへコピー">
+      
+        <meta name="lang:clipboard.copied" content="コピーしました">
+      
+        <meta name="lang:search.language" content="ja">
+      
+        <meta name="lang:search.pipeline.stopwords" content="True">
+      
+        <meta name="lang:search.pipeline.trimmer" content="True">
+      
+        <meta name="lang:search.result.none" content="何も見つかりませんでした">
+      
+        <meta name="lang:search.result.one" content="1件見つかりました">
+      
+        <meta name="lang:search.result.other" content="#件見つかりました">
+      
+        <meta name="lang:search.tokenizer" content="[\s\-　、。，．]+">
+      
+      <link rel="shortcut icon" href="../../assets/images/favicon.png">
+      <meta name="generator" content="mkdocs-1.0.4, mkdocs-material-4.6.0">
+    
+    
+      
+        <title>監視 - スターターキット</title>
+      
+    
+    
+      <link rel="stylesheet" href="../../assets/stylesheets/application.1b62728e.css">
+      
+        <link rel="stylesheet" href="../../assets/stylesheets/application-palette.a8b3c06d.css">
+      
+      
+        
+        
+        <meta name="theme-color" content="#ff7043">
+      
+    
+    
+      <script src="../../assets/javascripts/modernizr.268332fc.js"></script>
+    
+    
+      
+        <link href="https://fonts.gstatic.com" rel="preconnect" crossorigin>
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,400,400i,700%7CRoboto+Mono&display=fallback">
+        <style>body,input{font-family:"Roboto","Helvetica Neue",Helvetica,Arial,sans-serif}code,kbd,pre{font-family:"Roboto Mono","Courier New",Courier,monospace}</style>
+      
+    
+    <link rel="stylesheet" href="../../assets/fonts/material-icons.css">
+    
+    
+      <link rel="stylesheet" href="../../assets/custom.css">
+    
+    
+      
+    
+    
+  </head>
+  
+    
+    
+    <body dir="ltr" data-md-color-primary="deep-orange" data-md-color-accent="deep-orange">
+  
+    <svg class="md-svg">
+      <defs>
+        
+        
+      </defs>
+    </svg>
+    <input class="md-toggle" data-md-toggle="drawer" type="checkbox" id="__drawer" autocomplete="off">
+    <input class="md-toggle" data-md-toggle="search" type="checkbox" id="__search" autocomplete="off">
+    <label class="md-overlay" data-md-component="overlay" for="__drawer"></label>
+    
+      <a href="#_1" tabindex="1" class="md-skip">
+        Skip to content
+      </a>
+    
+    
+      <header class="md-header" data-md-component="header">
+  <nav class="md-header-nav md-grid">
+    <div class="md-flex">
+      <div class="md-flex__cell md-flex__cell--shrink">
+        <a href="../.." title="スターターキット" class="md-header-nav__button md-logo">
+          
+            <i class="md-icon"></i>
+          
+        </a>
+      </div>
+      <div class="md-flex__cell md-flex__cell--shrink">
+        <label class="md-icon md-icon--menu md-header-nav__button" for="__drawer"></label>
+      </div>
+      <div class="md-flex__cell md-flex__cell--stretch">
+        <div class="md-flex__ellipsis md-header-nav__title" data-md-component="title">
+          
+            <span class="md-header-nav__topic">
+              スターターキット
+            </span>
+            <span class="md-header-nav__topic">
+              
+                監視
+              
+            </span>
+          
+        </div>
+      </div>
+      <div class="md-flex__cell md-flex__cell--shrink">
+        
+          <label class="md-icon md-icon--search md-header-nav__button" for="__search"></label>
+          
+<div class="md-search" data-md-component="search" role="dialog">
+  <label class="md-search__overlay" for="__search"></label>
+  <div class="md-search__inner" role="search">
+    <form class="md-search__form" name="search">
+      <input type="text" class="md-search__input" name="query" placeholder="検索" autocapitalize="off" autocorrect="off" autocomplete="off" spellcheck="false" data-md-component="query" data-md-state="active">
+      <label class="md-icon md-search__icon" for="__search"></label>
+      <button type="reset" class="md-icon md-search__icon" data-md-component="reset" tabindex="-1">
+        &#xE5CD;
+      </button>
+    </form>
+    <div class="md-search__output">
+      <div class="md-search__scrollwrap" data-md-scrollfix>
+        <div class="md-search-result" data-md-component="result">
+          <div class="md-search-result__meta">
+            検索キーワードを入力してください
+          </div>
+          <ol class="md-search-result__list"></ol>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+        
+      </div>
+      
+    </div>
+  </nav>
+</header>
+    
+    <div class="md-container">
+      
+        
+      
+      
+      <main class="md-main" role="main">
+        <div class="md-main__inner md-grid" data-md-component="container">
+          
+            
+              <div class="md-sidebar md-sidebar--primary" data-md-component="navigation">
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    <nav class="md-nav md-nav--primary" data-md-level="0">
+  <label class="md-nav__title md-nav__title--site" for="__drawer">
+    <a href="../.." title="スターターキット" class="md-nav__button md-logo">
+      
+        <i class="md-icon"></i>
+      
+    </a>
+    スターターキット
+  </label>
+  
+  <ul class="md-nav__list" data-md-scrollfix>
+    
+      
+      
+      
+
+
+  <li class="md-nav__item">
+    <a href="../.." title="Home" class="md-nav__link">
+      Home
+    </a>
+  </li>
+
+    
+      
+      
+      
+
+  
+
+
+  <li class="md-nav__item md-nav__item--active md-nav__item--nested">
+    
+      <input class="md-toggle md-nav__toggle" data-md-toggle="nav-2" type="checkbox" id="nav-2" checked>
+    
+    <label class="md-nav__link" for="nav-2">
+      はじめに
+    </label>
+    <nav class="md-nav" data-md-component="collapsible" data-md-level="1">
+      <label class="md-nav__title" for="nav-2">
+        はじめに
+      </label>
+      <ul class="md-nav__list" data-md-scrollfix>
+        
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../cloud/" title="クラウド" class="md-nav__link">
+      クラウド
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../container/" title="コンテナ" class="md-nav__link">
+      コンテナ
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../iac/" title="Infrastructure as Code" class="md-nav__link">
+      Infrastructure as Code
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+  
+
+
+  <li class="md-nav__item md-nav__item--active">
+    
+    <input class="md-toggle md-nav__toggle" data-md-toggle="toc" type="checkbox" id="__toc">
+    
+      
+    
+    
+      <label class="md-nav__link md-nav__link--active" for="__toc">
+        監視
+      </label>
+    
+    <a href="./" title="監視" class="md-nav__link md-nav__link--active">
+      監視
+    </a>
+    
+      
+<nav class="md-nav md-nav--secondary">
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">目次</label>
+    <ul class="md-nav__list" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#_2" class="md-nav__link">
+    なぜ監視をするのか
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#_3" class="md-nav__link">
+    なにを監視するのか
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#slislo" class="md-nav__link">
+    SLI/SLOの定義
+  </a>
+  
+    <nav class="md-nav">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#slo" class="md-nav__link">
+    SLOとは
+  </a>
+  
+    <nav class="md-nav">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#sli" class="md-nav__link">
+    SLIとは
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#slislo_1" class="md-nav__link">
+    SLI/SLOベースの監視
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#tips" class="md-nav__link">
+    Tips
+  </a>
+  
+    <nav class="md-nav">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#_4" class="md-nav__link">
+    エラーインジェクション
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#sla" class="md-nav__link">
+    SLAの検討
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#3-pillars-of-observability" class="md-nav__link">
+    3 Pillars of Observability
+  </a>
+  
+    <nav class="md-nav">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#1" class="md-nav__link">
+    1. ログ
+  </a>
+  
+    <nav class="md-nav">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#_5" class="md-nav__link">
+    フォーマット
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_6" class="md-nav__link">
+    出力
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_7" class="md-nav__link">
+    閲覧
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_8" class="md-nav__link">
+    保管
+  </a>
+  
+    <nav class="md-nav">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#cloudwatch-logs" class="md-nav__link">
+    CloudWatch Logs
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#stack-driver-logging" class="md-nav__link">
+    Stack Driver Logging
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#datadog" class="md-nav__link">
+    Datadog
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_9" class="md-nav__link">
+    その他
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#2" class="md-nav__link">
+    2. メトリクス
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#3" class="md-nav__link">
+    3. トレース
+  </a>
+  
+    <nav class="md-nav">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#apm" class="md-nav__link">
+    APM
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_10" class="md-nav__link">
+    分散トレース
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#_11" class="md-nav__link">
+    その他
+  </a>
+  
+    <nav class="md-nav">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#_12" class="md-nav__link">
+    死活監視
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_13" class="md-nav__link">
+    アラート
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_14" class="md-nav__link">
+    ダッシュボード
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#_15" class="md-nav__link">
+    ツールの選定
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#_16" class="md-nav__link">
+    監視の実践
+  </a>
+  
+    <nav class="md-nav">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#1-slislo" class="md-nav__link">
+    1. SLI/SLOの定義
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#2_1" class="md-nav__link">
+    2. データの取得
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#3_1" class="md-nav__link">
+    3. アラートの設定
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#4" class="md-nav__link">
+    4. ダッシュボードの作成
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#_17" class="md-nav__link">
+    継続的な監視
+  </a>
+  
+    <nav class="md-nav">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#_18" class="md-nav__link">
+    負荷の計測
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_19" class="md-nav__link">
+    パフォーマンスチューニング
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_20" class="md-nav__link">
+    障害訓練
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#_21" class="md-nav__link">
+    まとめ
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#_22" class="md-nav__link">
+    参考
+  </a>
+  
+</li>
+      
+      
+      
+      
+      
+    </ul>
+  
+</nav>
+    
+  </li>
+
+        
+      </ul>
+    </nav>
+  </li>
+
+    
+      
+      
+      
+
+
+  <li class="md-nav__item">
+    <a href="../../1_construct/structure/" title="構築" class="md-nav__link">
+      構築
+    </a>
+  </li>
+
+    
+      
+      
+      
+
+
+  <li class="md-nav__item">
+    <a href="../../finally/" title="まとめ" class="md-nav__link">
+      まとめ
+    </a>
+  </li>
+
+    
+  </ul>
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+            
+              <div class="md-sidebar md-sidebar--secondary" data-md-component="toc">
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+<nav class="md-nav md-nav--secondary">
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">目次</label>
+    <ul class="md-nav__list" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#_2" class="md-nav__link">
+    なぜ監視をするのか
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#_3" class="md-nav__link">
+    なにを監視するのか
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#slislo" class="md-nav__link">
+    SLI/SLOの定義
+  </a>
+  
+    <nav class="md-nav">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#slo" class="md-nav__link">
+    SLOとは
+  </a>
+  
+    <nav class="md-nav">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#sli" class="md-nav__link">
+    SLIとは
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#slislo_1" class="md-nav__link">
+    SLI/SLOベースの監視
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#tips" class="md-nav__link">
+    Tips
+  </a>
+  
+    <nav class="md-nav">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#_4" class="md-nav__link">
+    エラーインジェクション
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#sla" class="md-nav__link">
+    SLAの検討
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#3-pillars-of-observability" class="md-nav__link">
+    3 Pillars of Observability
+  </a>
+  
+    <nav class="md-nav">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#1" class="md-nav__link">
+    1. ログ
+  </a>
+  
+    <nav class="md-nav">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#_5" class="md-nav__link">
+    フォーマット
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_6" class="md-nav__link">
+    出力
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_7" class="md-nav__link">
+    閲覧
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_8" class="md-nav__link">
+    保管
+  </a>
+  
+    <nav class="md-nav">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#cloudwatch-logs" class="md-nav__link">
+    CloudWatch Logs
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#stack-driver-logging" class="md-nav__link">
+    Stack Driver Logging
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#datadog" class="md-nav__link">
+    Datadog
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_9" class="md-nav__link">
+    その他
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#2" class="md-nav__link">
+    2. メトリクス
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#3" class="md-nav__link">
+    3. トレース
+  </a>
+  
+    <nav class="md-nav">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#apm" class="md-nav__link">
+    APM
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_10" class="md-nav__link">
+    分散トレース
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#_11" class="md-nav__link">
+    その他
+  </a>
+  
+    <nav class="md-nav">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#_12" class="md-nav__link">
+    死活監視
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_13" class="md-nav__link">
+    アラート
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_14" class="md-nav__link">
+    ダッシュボード
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#_15" class="md-nav__link">
+    ツールの選定
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#_16" class="md-nav__link">
+    監視の実践
+  </a>
+  
+    <nav class="md-nav">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#1-slislo" class="md-nav__link">
+    1. SLI/SLOの定義
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#2_1" class="md-nav__link">
+    2. データの取得
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#3_1" class="md-nav__link">
+    3. アラートの設定
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#4" class="md-nav__link">
+    4. ダッシュボードの作成
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#_17" class="md-nav__link">
+    継続的な監視
+  </a>
+  
+    <nav class="md-nav">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#_18" class="md-nav__link">
+    負荷の計測
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_19" class="md-nav__link">
+    パフォーマンスチューニング
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_20" class="md-nav__link">
+    障害訓練
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#_21" class="md-nav__link">
+    まとめ
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#_22" class="md-nav__link">
+    参考
+  </a>
+  
+</li>
+      
+      
+      
+      
+      
+    </ul>
+  
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+          
+          <div class="md-content">
+            <article class="md-content__inner md-typeset">
+              
+                
+                
+                <h1 id="_1">監視<a class="headerlink" href="#_1" title="Permanent link">&para;</a></h1>
+<h2 id="_2">なぜ監視をするのか<a class="headerlink" href="#_2" title="Permanent link">&para;</a></h2>
+<p>監視はユーザーへサービスを正常に提供できているかを確認するために行います。  </p>
+<h2 id="_3">なにを監視するのか<a class="headerlink" href="#_3" title="Permanent link">&para;</a></h2>
+<p>「サービスを正常に提供できている」の定義はサービスによって異なります。<br />
+ユーザーにWebページを見せることができることだったり、バッチが正常に終了することだったりします。<br />
+最終的にユーザーに正常にサービスを提供できていることを観測するために行うことに変わりはありません。</p>
+<p>クラウド前提であれば個人的にリソースベース（CPU/Memory）より、 SLI/SLOをベース に監視する事が望ましいと考えています。</p>
+<p>CPU/Memoryなどのリソースに対してはオートスケールをかけることで枯渇する可能性を減らすことができます。<br />
+一般的なWebサービスであればオートスケールによってリソースが枯渇するということは無いでしょう。</p>
+<h2 id="slislo">SLI/SLOの定義<a class="headerlink" href="#slislo" title="Permanent link">&para;</a></h2>
+<h3 id="slo">SLOとは<a class="headerlink" href="#slo" title="Permanent link">&para;</a></h3>
+<p>Service Level Objectiveの略で、システム提供の可用率を定義します。<br />
+例えば「99.95％」のようにです。<br />
+可用率は <strong>SLIをもとに算出</strong> し、この値が高ければ高いほど当然設計/開発/運用の難易度が上がります。</p>
+<h4 id="sli">SLIとは<a class="headerlink" href="#sli" title="Permanent link">&para;</a></h4>
+<p>Service Level Indicatorの略で、システムの安定稼働に必要な指標です。<br />
+例えば「エラー率」・「リクエストのレイテンシ」・「稼働率」などです。  </p>
+<h3 id="slislo_1">SLI/SLOベースの監視<a class="headerlink" href="#slislo_1" title="Permanent link">&para;</a></h3>
+<p>SLI/SLOベースの監視を始めるためにまずはSLIの定義を行います。<br />
+サービスによって性質は異なります。<br />
+最適なSLI/SLOをチーム内でディスカッションを行い、決定しましょう。</p>
+<p>サービスの性質を知るのに一番かんたんな手法は負荷試験をかけることです。<br />
+監視ツールを導入し、負荷試験を行ってどのようなメトリクスが取得できるか試してみると良いでしょう。</p>
+<table>
+<thead>
+<tr>
+<th align="left">SLA</th>
+<th align="left">週間ダウンタイム</th>
+<th align="left">月間ダウンタイム</th>
+<th align="left">年間ダウンタイム</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td align="left">99%</td>
+<td align="left">1.68 時間</td>
+<td align="left">7.2 時間</td>
+<td align="left">3.65 日</td>
+</tr>
+<tr>
+<td align="left">99.9%</td>
+<td align="left">10.1 分</td>
+<td align="left">43.2 分</td>
+<td align="left">8.76 時間</td>
+</tr>
+<tr>
+<td align="left">99.95%</td>
+<td align="left">5 分</td>
+<td align="left">21.6 分</td>
+<td align="left">4.38 時間</td>
+</tr>
+<tr>
+<td align="left">99.99%</td>
+<td align="left">1.01 分</td>
+<td align="left">4.32 分</td>
+<td align="left">52.56 分</td>
+</tr>
+<tr>
+<td align="left">99.999%</td>
+<td align="left">6 秒</td>
+<td align="left">25.9 秒</td>
+<td align="left">5.26 分</td>
+</tr>
+</tbody>
+</table>
+<blockquote>
+<p><a href="https://qiita.com/Aida1971/items/9ea3d3bcf29c906c7971">SLA ダウンタイム許容時間の早見表 - Qiita</a></p>
+</blockquote>
+<h2 id="tips">Tips<a class="headerlink" href="#tips" title="Permanent link">&para;</a></h2>
+<h3 id="_4">エラーインジェクション<a class="headerlink" href="#_4" title="Permanent link">&para;</a></h3>
+<p>サービスが100％動いているのは理想的ですが、あえてエラーを発生させ、目標となるSLOと近い数値を保つプラクティスがあります。<br />
+「100％動くことが前提」になってしまうと、障害時に思いがけない範囲で被害が起きうる可能性があります。<br />
+SLOに近い稼働率を維持するようにし、利用者側の期待値を上げすぎず、将来的に大災害になることを防ぎましょう。<br />
+例えば、Web APIを提供するときにユーザーがAPIを叩くときにリトライまで考慮してくれていることは稀で、本質的にはこういったリトライなど対障害のための仕組みをユーザーに導入してもらえるようになるとベストです。</p>
+<h3 id="sla">SLAの検討<a class="headerlink" href="#sla" title="Permanent link">&para;</a></h3>
+<p>Service Level Agreement は設定した数値（e.g. 99.95％）を維持できなかった際、なんらかの罰則が発生するサービスとクライアントの契約です。<br />
+罰則は基本的に返金という形です。</p>
+<p>クラウド事業者や一部SaaS事業者でSLAを設定しているのは見受けられますが、一般的なWebサービスにSLAは過剰でしょう。  </p>
+<p>個人的に、社外へのユーザーよりむしろ社内のユーザーへサービスを提供する際にSLAが必要になってくると考えます。<br />
+それはマイクロサービス化というより、"社内基盤システム"のような会員や課金などを司るサービスです。<br />
+社内基盤という立場はなあなあになってしまうケースを多く見受けられ、最終的に「社外のSaaSを使ったほうが良い」という評価を受けがちです。<br />
+そのようなケースを回避するために社内基盤では利用料を取り、SLAを定義するべきだと私は考えます。</p>
+<h2 id="3-pillars-of-observability">3 Pillars of Observability<a class="headerlink" href="#3-pillars-of-observability" title="Permanent link">&para;</a></h2>
+<p>まず監視をはじめるために監視対象からのデータを取得する必要があります。<br />
+データには様々なものがありますが、可観測性の3つの柱（3 Pillars of Observability）を意識すると良いでしょう。<br />
+<strong>ログ</strong> ・ <strong>メトリクス</strong> ・ <strong>トレース</strong> の3つの柱です。</p>
+<p>それぞれ見ていきましょう。</p>
+<h3 id="1">1. ログ<a class="headerlink" href="#1" title="Permanent link">&para;</a></h3>
+<p>システムに発生したなんらかのイベントです。<br />
+例えば起動/終了時だったり、処理結果だったり、エラーメッセージだったり、なんらかのイベントの履歴です。  </p>
+<h4 id="_5">フォーマット<a class="headerlink" href="#_5" title="Permanent link">&para;</a></h4>
+<p>ログを出力する際に無邪気に <code>printf</code> などでテキストだけ出力することはありません。<br />
+表示したいメッセージの他に、ログの重要度（LEVEL）・httpのヘッダー情報・タイムスタンプ・バージョン情報などをログに含める必要があります。  </p>
+<p>例えば以下はHTTPリクエストを受けるサーバーの例です（nginx）</p>
+<div class="codehilite"><pre><span></span>GET /index.html HTTP/1.1
+</pre></div>
+
+
+<p>↓</p>
+<div class="codehilite"><pre><span></span>172.18.0.1 - - [30/Mar/2019:18:53:31 +0000] &quot;GET /index.html HTTP/1.1&quot; 200 612 &quot;-&quot;&quot;Mozilla/5.0 (Macintosh; Intel Mac OS X 10_14_3) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/73.0.3683.86 Safari/537.36&quot; &quot;-&quot;
+</pre></div>
+
+
+<p>幸いlog4jやsyslogなど、代表的なフォーマットが既に存在して広く使用されています。<br />
+まずはこれら代表的なフォーマットを理解することが第一歩です。  </p>
+<p>次に、使用するフレームワークのフォーマットを確認しましょう。<br />
+基本的にフレームワークのデフォルトのフォーマットに乗っ取るのが良いでしょう。<br />
+オレオレフォーマットの場合メンバー間の共有や、欲しい情報が欠損していたりなど、おとなしく先人の知恵に乗っ取りましょう。</p>
+<p>また、ログは構造化されていたり構造化されていなかったりしますが、基本的に <strong>「1つのイベントは1行のJSON」</strong> にするのが良いででしょう。<br />
+構造化されていないログは扱いづらく、複数行ログが現れた日には地獄を見ます。<br />
+後々分析しやすいよう構造化すると良いでしょう。<br />
+最終的にログをみる場所で見やすければよいのです。</p>
+<blockquote>
+<ul>
+<li><a href="https://qiita.com/ndxbn/items/c4d2d745d464ebabd279">Web系の言語で使われている Logger のログレベルをまとめてみた - Qiita</a>  </li>
+<li><a href="https://qiita.com/nanasess/items/350e59b29cceb2f122b3">ログ設計指針 - Qiita</a></li>
+</ul>
+</blockquote>
+<h4 id="_6">出力<a class="headerlink" href="#_6" title="Permanent link">&para;</a></h4>
+<p>システムが吐き出したログをどこへ格納するか考える必要があります。<br />
+一般的に「ファイルに書き込むパターン」と「標準出力へ書き込むパターン」の2つのパターンがあります。<br />
+トラディショナルなアプリケーションであればファイルに書き込むパターンが多いですが、コンテナに最適化されているアプリケーションの場合であれば標準出力へ書き込むことを検討してください。</p>
+<p>モダンなアプリケーションの設計（例えば12factor app）の考え方的に「ステートレス」というものがあり、ファイルへの書き込みはステートフルな状態になってしまいます。<br />
+ログは標準出力へ書き込み、FluentdやDatadogなどのミドルウェアで拾いましょう。<br />
+FargateやGAEのようなサービスを使うのであれば、標準出力が自動的にモニタリングサービスへ転送されます。<br />
+もしファイルへ書き込むことになってしまった場合はログのローテションを忘れずに行いましょう。</p>
+<p>他にも出力するログが大きすぎるとパフォーマンスに影響する点にも注意しましょう。</p>
+<h4 id="_7">閲覧<a class="headerlink" href="#_7" title="Permanent link">&para;</a></h4>
+<p>AWSであればCloudWatch Logs、GCPであればStackDriverを用いることが一般的でしょう。<br />
+他にもELKスタックのKibanaやSplunkやDatadogなども使えます。</p>
+<p>ログ（や監視情報）の閲覧に困ったらDatadogは非常におすすめです。
+Datadogの良いところはAPMとログとメトリクスがシームレスに行き来できることです。  </p>
+<p>どのツールを使用するにせよ、一箇所に集めて複数サーバーにsshしなくていいようにすることが大事です。  </p>
+<p>また、この際注意しなければならないこととしてマスクしなければならない情報が存在することです。<br />
+例えばパスワードやクレジットカードの情報です。こういった情報はマスクして扱うようにしましょう。</p>
+<h4 id="_8">保管<a class="headerlink" href="#_8" title="Permanent link">&para;</a></h4>
+<p>一般的にログの保管は高価です。<br />
+だいたい7日を超えたログは安価なストレージへアーカイブして削除（ローテート）すると良いでしょう。<br />
+AWSであればS3へアーカイブすると良いでしょう。S3であればAthenaを使用して直接閲覧することができます。</p>
+<p>各種サービスの利用料を試算してみましょう。<br />
+例えば <strong>200文字</strong> のログ（先程例に上げたnginxのログ）が <strong>200万行</strong> で <strong>計400GB</strong> あるとしましょう。</p>
+<h5 id="cloudwatch-logs">CloudWatch Logs<a class="headerlink" href="#cloudwatch-logs" title="Permanent link">&para;</a></h5>
+<p><strong>$316.2/m</strong></p>
+<p>CloudWatch Logs は「取り込み」と「保存」の2種類の課金が存在します。<br />
+取り込みは1GBあたり\$0.76かかり、保存は1GBあたり\$0.033かかります。<br />
+ローテション期間はユーザーが任意の期間で設定でき、永久保存しておくことも可能です。そのため、ローテション期間を設定し忘れると余計な費用がかかってしまうことがあります。</p>
+<blockquote>
+<p><a href="https://aws.amazon.com/jp/cloudwatch/pricing/">料金 - Amazon CloudWatch | AWS</a></p>
+</blockquote>
+<h5 id="stack-driver-logging">Stack Driver Logging<a class="headerlink" href="#stack-driver-logging" title="Permanent link">&para;</a></h5>
+<p><strong>$200/m</strong></p>
+<p>$0.5/GiBです。<br />
+無料枠で最初の50GiB分は無料になります（今回の計算には入れていません）。<br />
+ローテション期間は30日です。</p>
+<blockquote>
+<p><a href="https://cloud.google.com/stackdriver/pricing">Pricing  |  Stackdriver Documentation  |  Google Cloud</a>
+<a href="https://cloud.google.com/logging/quotas">Quotas and limits  |  Stackdriver Logging  |  Google Cloud</a></p>
+</blockquote>
+<h5 id="datadog">Datadog<a class="headerlink" href="#datadog" title="Permanent link">&para;</a></h5>
+<p><strong>$2.54/m</strong></p>
+<p>100万イベント（100万行）を格納する毎に$1.27かかります。<br />
+デフォルトだと7日毎にローテーションされ、追加で課金することで30日まで延命することも可能です。<br />
+また、アーカイブの機能を持っており、設定を行うことで一定期間の過ぎたログをS3へ自動で転送してくれます。</p>
+<blockquote>
+<p><a href="https://www.datadoghq.com/pricing/">Pricing | Datadog</a></p>
+</blockquote>
+<h5 id="_9">その他<a class="headerlink" href="#_9" title="Permanent link">&para;</a></h5>
+<p>SaaSとしてはPapertrailやSplunk、OSSとしてはELKやgrafana/lokiなどなど、それぞれ比較検討してみると良いでしょう。</p>
+<h3 id="2">2. メトリクス<a class="headerlink" href="#2" title="Permanent link">&para;</a></h3>
+<p>CPU, Memory, Network, ディスクなど、特定の時間の値です。<br />
+例えばメモリの使用量やレスポンスタイムやコネクション数などです。<br />
+これらの値は最初から取得されている事が多いでしょう。特にクラウドであればほとんどのサービスが最初から自動的に取得されます。</p>
+<p>サービスの性質に合わせてメトリクスを取得しましょう。<br />
+ログと比較して比較的安価に取得/保管が可能なので、自動化をして積極的に取得しておくと後々助かると筆者は考えます。</p>
+<h3 id="3">3. トレース<a class="headerlink" href="#3" title="Permanent link">&para;</a></h3>
+<p>トレースは分散トレースもしくはAPM、あるいはその両方を指すことを見受けられます。<br />
+ここでは両方を指して「トレース」と呼びます。</p>
+<p>それぞれコード上での処理をトレースするためのプラクティスです。</p>
+<h4 id="apm">APM<a class="headerlink" href="#apm" title="Permanent link">&para;</a></h4>
+<p>APM（Application Performance Monitoring）を使用することでコード実行時のトランザクションを可視化してくれます。<br />
+これに関してはみる方がはやいでしょう。</p>
+<p><img alt="dd apm" src="../imgs/dd-apm.png" /></p>
+<p>画像はあるHTTPリクエストの1リクエストを可視化したものです。<br />
+どんなメソッド・クエリ・APIが呼び出されているのかが一目瞭然です。  </p>
+<h4 id="_10">分散トレース<a class="headerlink" href="#_10" title="Permanent link">&para;</a></h4>
+<p>昨今のアプリケーションはマイクロサービス化されていることが多いです。<br />
+マイクロサービスとは、例えばフロントエンドとバックエンドでサービスが別れていたり、会員APIや課金APIのような共通のサービスがあったり、「複数のサービスを協調させて1つのサービスとして動かす」ことです。  </p>
+<p>マイクロサービス化する際に複数のサービスが協調して動いていることを確認するため、サービスを横断してリクエストの処理を追う必要があります。<br />
+このプラクティス（とこれを実現するための手法）を分散トレースと呼びます。<br />
+代表的なプロダクトにJaeger・OpenTracing・Zipkinがあります。</p>
+<p>これはリクエストの処理を追うだけでなく、将来的に複雑化していくマイクロサービスの依存関係を把握するためにも使用することができます。<br />
+マイクロサービス化の初期段階から設計/導入しておくと将来的に楽できるでしょう。</p>
+<h2 id="_11">その他<a class="headerlink" href="#_11" title="Permanent link">&para;</a></h2>
+<p>ログ・メトリクス・トレース、3つの柱が重要ですが、これら以外にも監視を行う際に考えることはあります。</p>
+<h3 id="_12">死活監視<a class="headerlink" href="#_12" title="Permanent link">&para;</a></h3>
+<p>サービスが生きているか・死んでいるかを確認する監視です。<br />
+一定期間毎に「特定のプロセスが動いているか」・「特定のエンドポイントからレスポンスが返ってくるか」などの監視です。<br />
+単純にHTTPリクエストを送って確認するだけでも良いですが、E2Eテストを実行するなどするとより確実でしょう。</p>
+<h3 id="_13">アラート<a class="headerlink" href="#_13" title="Permanent link">&para;</a></h3>
+<p>サービスが異常な状態になった際に通知を上げる必要があります。<br />
+異常な状態の定義についてはアラートを設定する前にチームと管理者でディスカッションしてSLI/SLOを設定するところからはじめましょう。  </p>
+<p>アラートは無邪気にかけるのではなく、レベルを分けると良いでしょう。<br />
+例えば「warningとcriticalの2つに分ける」のようにです。  </p>
+<p>エンジニアが対応可能かつ即座に修正が必要なものはcriticalに設定し、確実にエンジニアに通知が行くようにします。<br />
+そういったエンジニアが対応可能ではないイベントはwarningに設定し、ベストエフォートで対応すると良いでしょう。<br />
+通知が飛びすぎるとアラートがオオカミ少年になり、エンジニアが見なくなるリスクがあります。また、何度もいいますが、「その障害はエンジニアが対応可能か」が重要です。<br />
+極端な例でいうとDDoSのようなエンジニアに対応することが困難な状況の場合は通知を送信しても意味がありません。<br />
+また、クラウドを使用している場合はCPUやMemoryのようなリソースにアラートをかけることもあまり良いプラクティスではないです。リソース起因で障害が起きないようにするために負荷試験を十分に行ってキャパシティプランニングを行い、その上でオートスケールをかけるようにしましょう。</p>
+<p>アラートをcriticalに設定する際は慎重に行うだけでなく、Playbookの作成も同時に行いましょう。<br />
+Playbookとは障害対応の手順書のことです。<br />
+アラートをかける場合は障害の予測を行って設定を行い、その対応手順も同時に作成しましょう。もしかしたらその障害は自動化できるかもしれません。</p>
+<p>余談になりますが、criticalなアラートが発砲され障害対応を行った際にはポストモーテムの作成を行いましょう。<br />
+ポストモーテムとは発生した障害に対するふりかえりです。障害報告書のようなトラディショナルなものではなく、エンジニアがエンジニアのためにインシデントから得た学びを共有するためのドキュメントです。<br />
+ポストモーテムの文化は会社としての学びの機会でポジティブなのです。<br />
+どのようなフォーマットにするかはメンバーとディスカッションして決めると良いですが、参考までにポストモーテムにのせると良いであろうエッセンスをSRE本から引用します。</p>
+<blockquote>
+<ul>
+<li>何が起きたのか  </li>
+<li>対応の有効性  </li>
+<li>次の時に変えるべき行動は何か  </li>
+<li>特定のインシデントの再発を防止するために行うことは何か  </li>
+</ul>
+<p><a href="https://www.oreilly.co.jp/books/9784873117911/">O'Reilly Japan - SRE サイトリライアビリティエンジニアリング</a></p>
+</blockquote>
+<h3 id="_14">ダッシュボード<a class="headerlink" href="#_14" title="Permanent link">&para;</a></h3>
+<p>メトリクスを一覧するために作成します。<br />
+ダッシュボードの作成はSLIをベースに構築しましょう。<br />
+また、闇雲に1つのダッシュボードにメトリクスを詰め込むのはアンチパターンです。<br />
+SLIを監視するためのメインのダッシュボードと、特定のリソースを深堀りするためのサブダッシュボード（ALB用やRDS用など）のようにわけるとよいでしょう。</p>
+<p>ダッシュボードに表示するものとしてはSLIに沿ったものメインに、以下の4大シグナルも参考にしてみると良いでしょう。  </p>
+<blockquote>
+<p><a href="https://landing.google.com/sre/sre-book/chapters/monitoring-distributed-systems/#xref_monitoring_golden-signals">Google - Site Reliability Engineering</a></p>
+</blockquote>
+<p>最後に、ダッシュボードはチームが定常的に見れることが望ましく、作成したダッシュボードを表示し続けるためのモニタリング用のディスプレイを用意する価値はあるでしょう。  </p>
+<h2 id="_15">ツールの選定<a class="headerlink" href="#_15" title="Permanent link">&para;</a></h2>
+<p>筆者としては3Pillarsに対応できるツールであればどれを採用しても問題ないと思います。<br />
+強いて言うなら3Pillarsを満たしているかつ多機能で安価なSaaSの <strong>Datadog</strong> がオススメです。<br />
+小規模なサービスなら約$50/mで活用することができます。これは学生アルバイトエンジニアの1日分の給料より安いです。稟議に通らないわけがないです。</p>
+<p>選定は機能面での選定はもちろんですが、SaaSであれば資本力があるか、OSSであれば更新がされているか、将来性を確認しましょう。</p>
+<p>また、「自分ができる」より「チームができる」ことを前提に置くと良いでしょう。<br />
+モニタリングツールは障害時の命綱と言っても過言ではないです。<br />
+「ログはあのサービスに」「メトリクスはあのサービスに」「APMも実はあのサービスで」、、、そしてそれぞれの操作を覚えて、、、複数の手段を用意する際はチームで見合ったコストになるのかはちゃんと考慮しましょう。<br />
+幸い、監視ツールは、基本的に、サービスに直接影響を及ぼすものではありません。そのため複数のツールを選定しやすくあります。<br />
+一番チームにあったツールを採用しましょう。</p>
+<h2 id="_16">監視の実践<a class="headerlink" href="#_16" title="Permanent link">&para;</a></h2>
+<p>ここまでが前提知識の学習でした。<br />
+ここからは監視を実戦投入するためにどういった順序で取り組んでいけばよいのかについてです。</p>
+<h3 id="1-slislo">1. SLI/SLOの定義<a class="headerlink" href="#1-slislo" title="Permanent link">&para;</a></h3>
+<p>何度もいいますが、SLI/SLOを定義しましょう。 
+これらはサービスを運用するにあたって指標となる値です。チームだけで定義するのではなく、管理者（プロダクトオーナー）との合意も得ましょう。  </p>
+<p>SLIを決める観点として <strong>「ユーザーがを利用できているか」</strong> を意識することです。<br />
+サービスの性質によりますが、一般的なWebサービスであれば「一定時間以内のレスポンスタイム」「リクエストのエラーレート」がよくあげられます。これがバッチ処理になってくるとまたSLIが変わってきます。<br />
+SLIに悩んだら4大シグナル（「レイテンシ」「トラフィック」「エラー」「サチュレーション」）を参考にすると良いです。  </p>
+<p>決まらない場合は <strong>「リクエスト成功率」・「レスポンスタイム」をSLI</strong> とし、 <strong>SLOを99.5%</strong> （月間3.6時間のダウンを許容）にすると一般的なサービスなら良いと思います。</p>
+<p>SLOを定義することはエンジニアのために行うものだと筆者は思っています。<br />
+一般的になにもしないとビズサイドから「SLAは100％」と意味不明なWordが飛んできてもおかしくないです。ビジネス層へシステムは100%ではないことを説明し、その合意をするタイミングを含めてSLOの定義を行ってしまいましょう。<br />
+SLOの定義はエンジニアが管理者からの定量的な評価を受けることができるようになり、SLOを取り入れたことによりエラーバジェットという考え方で生産的な挑戦をすることができるようになります。  </p>
+<p>なにより、見えないものと戦わなくて良くなるということは気分が良いです。</p>
+<h3 id="2_1">2. データの取得<a class="headerlink" href="#2_1" title="Permanent link">&para;</a></h3>
+<p>サービスを運用するために必要なデータを取得します。<br />
+このタイミングで監視ソフトウェアの選定を行うと良いでしょう。<br />
+ツールの選定後、監視エージェントの配置やライブラリのインストールを行います。</p>
+<h3 id="3_1">3. アラートの設定<a class="headerlink" href="#3_1" title="Permanent link">&para;</a></h3>
+<p>正常ではないパターンだけアラートをかけます。<br />
+アラートは、crit/warnでアラートのレベルを分けて設定し、Playbookの用意をしましょう。</p>
+<h3 id="4">4. ダッシュボードの作成<a class="headerlink" href="#4" title="Permanent link">&para;</a></h3>
+<p>SLIをもととし、設定したSLIを一覧できるようにしましょう。<br />
+ダッシュボード1つにすべての情報を詰め込む必要はありません。1つのダッシュボードへ全ての情報をまとめるより、粒度によって複数サブダッシュボードを作っておくと良いでしょう。<br />
+例えばサービス全体を俯瞰して見れるメインダッシュボードを用意し、それに紐づくダッシュボードをいくつかつくるとします。<br />
+メインダッシュボードではSLIで定義しているメトリクスを載せましょう。例えばエラーレートやレスポンスタイムなどです。このダッシュボードは日常的にチーム全員が見えるディスプレイに表示しておくと良いでしょう。<br />
+サブダッシュボードは使っているコンポーネント単位で作ります。RDS用、ELB用、Redis用、特定のPod用などなど、障害調査時に活用できるように作ります。</p>
+<h2 id="_17">継続的な監視<a class="headerlink" href="#_17" title="Permanent link">&para;</a></h2>
+<h3 id="_18">負荷の計測<a class="headerlink" href="#_18" title="Permanent link">&para;</a></h3>
+<p>サービスはサービスの成長（ユーザー数の増加など）と共に負荷が上がっていきます。<br />
+こういった負荷に対するキャパシティプランニングのためにもダッシュボードを日常的に確認しておきましょう。</p>
+<h3 id="_19">パフォーマンスチューニング<a class="headerlink" href="#_19" title="Permanent link">&para;</a></h3>
+<p>監視をしているとパフォーマンスが悪い箇所を見つけられることができます。<br />
+例えばCDNのキャッシュが効いてなかったり、MySQLのインデックスが張られていなかったりなどです。  </p>
+<h3 id="_20">障害訓練<a class="headerlink" href="#_20" title="Permanent link">&para;</a></h3>
+<p>一定期間毎にステージング環境など本番に近い環境で障害を意図的に起こし、それに対して対応をする障害訓練をするとよいでしょう。<br />
+障害はポストモーテムを参考に過去に起きた障害を再現してもいいですし、アラート設定時に作成したPlaybookを使うのでも良いです。<br />
+これを行うことでサービスの特性を知ることができ、新旧メンバーともに知見の標準化をすることが期待できます。また、単純に障害への対応能力を上げることもできるでしょう。</p>
+<h2 id="_21">まとめ<a class="headerlink" href="#_21" title="Permanent link">&para;</a></h2>
+<ul>
+<li>監視は運用する上で欠かせず、先人が様々なデザインを生み出しています。先人の知恵から学びましょう。</li>
+<li>個人的にDatadogがオススメです。</li>
+</ul>
+<h2 id="_22">参考<a class="headerlink" href="#_22" title="Permanent link">&para;</a></h2>
+<ul>
+<li><a href="https://www.oreilly.co.jp/books/9784873118642/">O'Reilly Japan - 入門 監視</a></li>
+<li><a href="https://cloudplatform-jp.googleblog.com/2017/02/availability-part-deux-CRE-life-lessons.html">Google Cloud Platform Japan 公式ブログ: SLO、SLI、SLA について考える : CRE が現場で学んだこと</a><ul>
+<li>SLI/SLO/SLAについて</li>
+</ul>
+</li>
+<li><a href="https://prometheus.io/docs/practices/naming/">Metric and label naming | Prometheus</a><ul>
+<li>OSS監視ツールPrometheusの提唱するベストプラクティス</li>
+</ul>
+</li>
+<li><a href="https://www.datadoghq.com/ja/blog/%E3%83%A2%E3%83%8B%E3%82%BF%E3%83%AA%E3%83%B3%E3%82%B0%E3%81%AE%E3%83%99%E3%82%B9%E3%83%88%E3%83%97%E3%83%A9%E3%82%AF%E3%83%86%E3%82%A3%E3%82%B9/">モニタリングのベストプラクティス | Datadog</a></li>
+<li><a href="https://cloudplatform-jp.googleblog.com/2017/11/building-good-SLOs-CRE-life-lessons.html">Google Cloud Platform Japan 公式ブログ: 優れた SLO を策定するには : CRE が現場で学んだこと</a></li>
+<li><a href="https://cengizhan.com/3-pillars-of-observability-8e6cb5434206">3 Pillars of Observability - cengizhan.com</a></li>
+<li><a href="https://www.scalyr.com/blog/three-pillars-of-observability/">Three Pillars of Observability: Do You Have All of Them? | Scalyr</a></li>
+<li><a href="https://response.pagerduty.com/">PagerDuty Incident Response Documentation</a><ul>
+<li>PagerDutyのインシデント対応についてのドキュメント</li>
+</ul>
+</li>
+<li><a href="https://gist.github.com/a-know/800eddcd7dd00a1c9043101f05511443">「入門 監視」読書メモ · GitHub</a></li>
+<li><a href="https://newrelic.com/resource/digital-customer-experience-best-practices-jp">デジタルカスタマーエクスペリエンスのモニタリング（DCX）に関するベストプラクティス | New Relic Resource</a></li>
+<li><a href="https://aws.amazon.com/jp/cloudfront/sla/">Amazon CloudFront サービスレベルアグリーメント（SLA） | アマゾン ウェブ サービス（AWS 日本語）</a></li>
+<li><a href="http://febc-yamamoto.hatenablog.jp/entry/2019/02/17/152014">【読書メモ】モニタリングでの4大シグナル/USEメソッド/REDメソッド - febc技術メモ</a></li>
+</ul>
+                
+                  
+                
+                
+              
+              
+                
+
+
+              
+            </article>
+          </div>
+        </div>
+      </main>
+      
+        
+<footer class="md-footer">
+  
+    <div class="md-footer-nav">
+      <nav class="md-footer-nav__inner md-grid">
+        
+          <a href="../iac/" title="Infrastructure as Code" class="md-flex md-footer-nav__link md-footer-nav__link--prev" rel="prev">
+            <div class="md-flex__cell md-flex__cell--shrink">
+              <i class="md-icon md-icon--arrow-back md-footer-nav__button"></i>
+            </div>
+            <div class="md-flex__cell md-flex__cell--stretch md-footer-nav__title">
+              <span class="md-flex__ellipsis">
+                <span class="md-footer-nav__direction">
+                  前
+                </span>
+                Infrastructure as Code
+              </span>
+            </div>
+          </a>
+        
+        
+          <a href="../../1_construct/structure/" title="構築" class="md-flex md-footer-nav__link md-footer-nav__link--next" rel="next">
+            <div class="md-flex__cell md-flex__cell--stretch md-footer-nav__title">
+              <span class="md-flex__ellipsis">
+                <span class="md-footer-nav__direction">
+                  次
+                </span>
+                構築
+              </span>
+            </div>
+            <div class="md-flex__cell md-flex__cell--shrink">
+              <i class="md-icon md-icon--arrow-forward md-footer-nav__button"></i>
+            </div>
+          </a>
+        
+      </nav>
+    </div>
+  
+  <div class="md-footer-meta md-typeset">
+    <div class="md-footer-meta__inner md-grid">
+      <div class="md-footer-copyright">
+        
+        powered by
+        <a href="https://www.mkdocs.org">MkDocs</a>
+        and
+        <a href="https://squidfunk.github.io/mkdocs-material/">
+          Material for MkDocs</a>
+      </div>
+      
+    </div>
+  </div>
+</footer>
+      
+    </div>
+    
+      <script src="../../assets/javascripts/application.808e90bb.js"></script>
+      
+        
+        
+          
+          <script src="../../assets/javascripts/lunr/lunr.stemmer.support.js"></script>
+          
+            
+              
+                <script src="../../assets/javascripts/lunr/tinyseg.js"></script>
+              
+              
+                <script src="../../assets/javascripts/lunr/lunr.ja.js"></script>
+              
+            
+          
+          
+        
+      
+      <script>app.initialize({version:"1.0.4",url:{base:"../.."}})</script>
+      
+        <script src="../../assets/custom.js"></script>
+      
+    
+  </body>
+</html>
